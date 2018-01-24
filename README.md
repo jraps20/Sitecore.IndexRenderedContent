@@ -41,6 +41,10 @@ This is a custom pipeline that is used to determine which renderings to index. T
 
 By default, it reads the `<indexableRenderings>` section of the config and only allows renderings defined here to have their datasources indexed. If you require unique conditions, add a new processor as needed.
 
+## <indexing.extractRenderingsDatasources>
+
+This is a custom pipeline responsible for extracting valid renderings and their datasources from the indexed item. The two included processors review the Layout and FinalLayout fields for all valid renderings that contain a datasource. 
+
 ## <indexing.getDatasourceContent>
 
 This is a custom pipeline used to extract the data from a datasource. By default, it iterates all fields on a datasource item and only indexes fields that are Text Fields. It uses `Sitecore.ContentSearch.IndexOperationsHelper.IsTextField` to make this classification. It also automatically excludes all fields that begin with "__" as these are system fields.
@@ -50,7 +54,3 @@ It also strips HTML tags from the content for a field such as a rich text field.
 ## <indexing.renderedContent.Saving>
 
 This is a custom pipeline that is executed directly before the extracted content is stored in the index. By default, the only processor here simply formats the content slightly by removing extra whitespace contained in the field.
-
-## <indexing.extractRenderingsDatasources>
-
-This is a custom pipeline responsible for extracting valid renderings and their datasources from the indexed item. The two included processors review the Layout and FinalLayout fields for all valid renderings that contain a datasource. 
