@@ -4,11 +4,11 @@ Easily and strategically index modular content in Sitecore. Patch config determi
 
 ### Support
 
-Sitecore 9+ - _. If you use this package with success, please let me know and I will update supported versions. To the best of my knowledge, the depedent logic has not been updated._
+*Sitecore 9+ -* _. If you use this package with success, please let me know and I will update supported versions. To the best of my knowledge, the depedent logic has not been updated._
 
-Sitecore 8.1 and newer - Verified on 8.1 up to 8.2u5. 
+*Sitecore 8.1 and newer -* Verified on 8.1 up to 8.2u5. 
 
-Sitecore 8.0 and lower - This package will not work out of the box on these versions due to the LanguageFallbackManager class not existing. If LanguageFallback is not required, remove the reference from ExtractRenderingDatasourceItems.cs.
+*Sitecore 8.0 and lower -* This package will not work out of the box on these versions due to the LanguageFallbackManager class not existing. If LanguageFallback is not required, remove the reference from ExtractRenderingDatasourceItems.cs.
 
 # Installation
 
