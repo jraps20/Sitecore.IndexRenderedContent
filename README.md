@@ -25,13 +25,15 @@ This project is intended to be highly configurable. It makes certain assumptions
 
 If there is anything outlined below that does not meet your requirements, then patch in your own custom processor.
 
+# Pipelines
+
 ## <indexing.getDependencies>
 
 This is a default Sitecore pipeline. It is used to determine what items to update if a dependent item is updated. 
 
 In this package, the included processor, on item save, looks for any items that refer to this item from the Layout or FinalLayout fields. If a match is found, this implies a "Page" item in Sitecore has a rendering with this item set as a datasource. This triggers the index to add the associated "Page" item to the index.
 
-_It is worth being extra clear that this processor will only find items that are directly linked as a datasource. It will not find items, for example, that may be a child of a datasource item. If you had a "Tabbed" rendering that points to a primary datasource, and then it relied on child items for each "Tab". Updating the individual tabs would not trigger the primary page item to be reindexed._
+***It is worth being extra clear that this processor will only find items that are directly linked as a datasource. It will not find items, for example, that may be a child of a datasource item. If you had a "Tabbed" rendering that points to a primary datasource, and then it relied on child items for each "Tab". Updating the individual tabs would not trigger the primary page item to be reindexed.***
 
 ## <indexing.getIndexableRenderings>
 
