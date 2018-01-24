@@ -10,6 +10,12 @@ Easily and strategically index modular content in Sitecore. Patch config determi
 
 **Sitecore 8.0 and older -** This package will not work out of the box on these versions due to the LanguageFallbackManager class not existing. If LanguageFallback is not required, remove the reference from ExtractRenderingDatasourceItems.cs.
 
+# Credits
+
+1. **Nick Wesselman** - `<indexing.getDependencies>` processor was adapted from the following gist courtesy of Nick - https://gist.github.com/techphoria414/7604814
+2. **Kam Figy** - Overall concept for this library adapted from this post by Kamsar - https://kamsar.net/index.php/2014/05/indexing-subcontent/
+3. Likely many others. This library is a consolidation of various approaches refactored into an easily customizable package.
+
 # Installation
 
 1. Install the NuGet package into your Sitecore web project: https://www.nuget.org/packages/Sitecore.Index.RenderedContent/1.0.0
