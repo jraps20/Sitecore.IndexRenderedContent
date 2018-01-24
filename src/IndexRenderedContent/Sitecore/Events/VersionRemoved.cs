@@ -41,8 +41,7 @@ namespace IndexRenderedContent.Sitecore.Events
 
             foreach (var linkedItem in linkedItems)
             {
-                var uniqueId = new SitecoreItemUniqueId(linkedItem);
-                index.Update(uniqueId);
+                index.Update(new SitecoreItemUniqueId(linkedItem));
             }
         }
     }
