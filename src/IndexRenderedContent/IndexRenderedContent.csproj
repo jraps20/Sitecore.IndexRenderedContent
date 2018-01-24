@@ -84,7 +84,6 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="Sitecore\ComputedFields\RenderedContent.cs" />
     <Compile Include="Sitecore\ConfigElements\IndexableRenderings.cs" />
-    <Compile Include="Sitecore\Events\VersionRemoved.cs" />
     <Compile Include="Sitecore\PipelineArgs\ExtractRenderingsDatasourceArgs.cs" />
     <Compile Include="Sitecore\PipelineArgs\GetDatasourceContentArgs.cs" />
     <Compile Include="Sitecore\PipelineArgs\RenderedContentStringArgs.cs" />
