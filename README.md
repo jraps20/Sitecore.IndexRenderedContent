@@ -12,7 +12,7 @@ Easily and strategically index modular content in Sitecore. Patch config determi
 
 # Installation
 
-1. Install the NuGet package into your Sitecore web project: (link to nuget)
+1. Install the NuGet package into your Sitecore web project: https://www.nuget.org/packages/Sitecore.Index.RenderedContent/1.0.0
 2. Review `App_Config\Include\Z.IndexRenderedContent.config`
 3. Update `<defaultLuceneIndexConfiguration>` to match the index configuration you're targeting. If using default Lucene configuration, no change necessary.
 4. Add indexable renderings to the `<indexableRenderings>` element following guidelines. These are the renderings that will be indexed. Without adding renderings here, nothing will be indexed.
